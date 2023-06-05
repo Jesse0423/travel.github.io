@@ -1235,7 +1235,7 @@ footer img {
 }
 
 #greet .btn:hover:before {
-    content: "owo";
+    content: "West";
 }
 
 .lead .handwriting {
@@ -1298,26 +1298,26 @@ footer img {
     text-align: left;
 }
 
-#uwu {
+#tw {
     padding: 3rem 0 6rem;
 }
 
-#uwu img {
+#tw img {
     width: 200px;
     height: 200px;
     margin: 1.5rem auto 0;
     transition: transform .3s;
 }
 
-#uwu img:hover {
+#tw img:hover {
     transform: scale(1.1);
 }
 
-#uwu hr {
+#tw hr {
     width: 80%;
 }
 
-#uwu h4 {
+#tw h4 {
     position: relative;
 }
 
@@ -1390,7 +1390,3 @@ footer img {
     margin: 0 auto;
 }
 /*team*/
-
-
-
-
