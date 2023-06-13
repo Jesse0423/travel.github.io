@@ -21,23 +21,27 @@
     }
 
     h2 {
-        color: #0F4C81;
+        color: #0f814a;
     }
 
-    hr {
-        border-color: #0F4C81;
+    hr.hr-1 {
+        border-color: #ffffff;
+    }
+    
+    hr.hr-2 {
+        border-color: #0f814a;
     }
 
     .btn-primary {
-        background-color: #0F4C81;
+        background-color: #0f814a;
         color: white;
-        border: 1px solid #0F4C81;
+        border: 1px solid #0f814a;
     }
 
     .btn-primary:hover, .btn-primary:focus, .btn-primary .active {
         background-color: white;
-        color: #0F4C81;
-        border: 1px solid #0F4C81;
+        color: #0f814a;
+        border: 1px solid #0f814a;
     }
 
     .btn-group {
@@ -45,14 +49,14 @@
     }
 
     .btn-outline-primary {
-        border: 2px solid #0F4C81;
-        color: #0F4C81;
+        border: 2px solid #0f814a;
+        color: #0f814a;
         transition: ease 0.5s;
     }
 
     .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary .active {
-        border: 2px solid #0F4C81;
-        background-color: #0F4C81;
+        border: 2px solid #0f814a;
+        background-color: #0f814a;
         color: #FBF9FA;
     }
 
@@ -79,13 +83,13 @@
     }
 
     .nav-link:hover {
-        color: #0F4C81;
+        color: #0f814a;
         text-decoration: underline;
         transition: 0.5s ease-in-out;
     }
 
     .active {
-        color: #0F4C81;
+        color: #0f814a;
         text-decoration: underline;
         transition: 0.5s ease-in-out;
     }
@@ -95,13 +99,13 @@
     }
 
     .dropdown-item:hover {
-        background-color: #0F4C81;
+        background-color: #0f814a;
         transition: 0.5s ease-in-out;
         color: #FBF9FA;
     }
 
     .dropdown-item.active {
-        background-color: #0F4C81;
+        background-color: #0f814a;
         color: #FBF9FA;
     }
 
@@ -235,7 +239,7 @@
     }
 
     .footer-header:hover, .footer-item:hover {
-        color: #0F4C81;
+        color: #0f814a;
         text-decoration: underline;
     }
 
@@ -311,7 +315,7 @@
     }
 
     #breadcrumb button a {
-        color: #0f4c81;
+        color: #0f814a;
     }
 
     #breadcrumb button a:hover {
@@ -365,7 +369,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: rgba(15,76,129,0.50);
+        background-color: rgba(15, 129, 80, 0.66);
     }
 
     .banner h1 {
@@ -457,7 +461,7 @@
 
     /*index*/
     #index {
-        background-color: #0F4C81;
+        background-color: #0f814a;
         height: 41rem;
         overflow-y: scroll;
         position: relative;
@@ -475,28 +479,28 @@
 
     #index .row:nth-child(1) {
         background: url("../img/about1.jpg") no-repeat center;
-        background-color: rgba(15,76,129,0.75);
+        background-color: rgba(15, 129, 66, 0.75);
         background-blend-mode: multiply;
         background-size: cover;
     }
 
     #index .row:nth-child(2) {
         background: url("../img/about2.jpg") no-repeat center;
-        background-color: rgba(15,76,129,0.75);
+        background-color: rgba(15, 129, 66, 0.75);
         background-blend-mode: multiply;
         background-size: cover;
     }
 
     #index .row:nth-child(3) {
         background: url("../img/about3.jpg") no-repeat center;
-        background-color: rgba(15,76,129,0.75);
+        background-color: rgba(15, 129, 66, 0.75);
         background-blend-mode: multiply;
         background-size: cover;
     }
 
     #index .row:nth-child(4) {
         background: url("../img/about4.jpg") no-repeat center;
-        background-color: rgba(15,76,129,0.75);
+        background-color: rgba(15, 129, 66, 0.75);
         background-blend-mode: multiply;
         background-size: cover;
     }
@@ -532,7 +536,7 @@
     }
 
     #art-center h2 {
-        color: #0F4C81;
+        color: #0f814a;
     }
 
     #description, #art, #location {
@@ -541,13 +545,17 @@
         scroll-margin-top: 56px;
     }
 
+    #location h2 {
+        text-align: center;
+    }
+
     #description a {
-        color: #0F4C81;
+        color: #0f814a;
         text-decoration: underline;
     }
 
     #art {
-        background-color: #0F4C81;
+        background-color: #0f814a;
     }
 
     #art h2 {
@@ -612,17 +620,39 @@
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: rgba(15,76,129,0.66);
+        background-color: rgba(15, 129, 80, 0.66);
     }
 
-    .img-hover h5 {
+    .img-hover.img-hover-2 {
+        position: absolute !important;
+        flex: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(255, 255, 255, 0.66);
+    }
+
+    .img-hover .h5-white {
         width: 100%;
         color: white;
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .img-hover .h5-green {
+        width: 100%;
+        color: #0f814a;
+        position: absolute;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
@@ -631,7 +661,7 @@
         position: relative;
     }
 
-    #art a:hover>.img-hover, #gallery a:hover>.img-hover, #other-art a:hover>.img-hover, #tw-center a:hover>.img-hover {
+    #art a:hover>.img-hover, #gallery a:hover>.img-hover, #other-art a:hover>.img-hover, #tw-center a:hover>.img-hover, #tw-center-2 a:hover>.img-hover{
         opacity: 1;
     }
 
@@ -698,13 +728,69 @@
     }
     /*center*/
 
+    /*Hulien*/
+    #Hulien {
+        padding: 3rem 0 7rem;
+    }
+
+    #Hulien>div>.row:not(#tw-art) {
+        padding: 5rem 0;
+        text-align: left;
+    }
+
+    #Hulien>div>.row>div {
+        margin: 0 auto;
+    }
+
+    #tw-center,
+    #tw-center-2 {
+        background-color: #0f814a;
+    }
+
+    #tw-center-2 {
+        background-color: #fcfcfc;
+    }
+
+    #tw-center h2 {
+        color: white;
+    }
+    #tw-center-2 h2 {
+        color: #0f814a;
+    }
+
+    #tw-center hr{
+        color : white;
+    }
+    #tw-center-2 hr {
+        border-color: #0f814a;
+    }
+
+    #tw-center img,
+    #tw-center-2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #tw-center .row,
+    #tw-center-2 .row {
+        margin: 0;
+        padding: .25rem;
+    }
+
+    #tw-art {
+        padding: 2rem 0;
+    }
+    /*Hulien*/
+
+
+
     /*team*/
     #team {
         margin: 0 auto 5rem;
     }
 
     #team h2 {
-        color: #0F4C81;
+        color: #0f814a;
     }
 
     #greet div {
@@ -746,7 +832,7 @@
     #greet .btn {
         color: #FBF9FA;
         border-color: #FBF9FA;
-        background-color: #0F4C81;
+        background-color: #0f814a;
     }
 
     #greet .btn, #reference .btn, #tw-art .btn{
@@ -755,7 +841,7 @@
 
     #greet .btn:hover {
         background-color: #FBF9FA;
-        color: #0F4C81;
+        color: #0f814a;
         border: 1px solid #FBF9FA;
     }
 
@@ -785,7 +871,7 @@
     }
 
     #lec, #greet {
-        background-color: #0F4C81;
+        background-color: #0f814a;
         padding: 3rem 0;
     }
 
@@ -855,7 +941,7 @@
     }
 
     .card {
-        border: 1px solid #0F4C81;
+        border: 1px solid #0f814a;
         background-color: #FBF9FA;
     }
 
@@ -880,7 +966,7 @@
     }
 
     .duty .badge-primary {
-        background-color: #0F4C81;
+        background-color: #0f814a;
         margin: 0.25rem 1px;
     }
 
@@ -897,7 +983,7 @@
 
     #reference i, #tw-art i {
         font-size: 3rem;
-        color: #0F4C81;
+        color: #0f814a;
     }
 
     @media (max-width: 767.9px) {
@@ -919,3 +1005,164 @@
         margin: 0 auto;
     }
     /*team*/
+
+    /*food*/
+    #food {
+        margin: 0 auto;
+        min-height: 50rem;
+    }
+    
+    #food hr {
+        margin-bottom: 1.5rem;
+        width: 60%;
+    }
+    
+    .gallery {
+        margin: 0 auto;
+    }
+    
+    #food table {
+        border: none;
+        border-collapse: collapse;
+        text-align: left;
+    }
+    
+    #food td {
+        min-width: 150px;
+        padding: 0.5rem 0;
+        vertical-align: top;
+    }
+    
+    #food table a {
+        text-decoration: underline;
+        color: #0f814a;
+    }
+    
+    @media (max-width:991.9px) {
+        #food .btn-group{
+            width: 95%;
+        }
+        
+        #food .btn-group .btn {
+            margin: 2px auto;
+            border-radius: 0;
+        }
+    }
+    
+    @media (max-width: 767.9px) {
+        #food .btn-group{
+            display: inline-block;
+            width: 500px;
+        }
+        
+        #food .btn-group .btn {
+            margin: 2px -3px;
+        }
+    }
+    
+    @media (max-width: 575.9px) {
+        #food .btn-group {
+            width: auto;
+        }
+        
+        #food .btn-group .btn {
+            width: 85%;
+            margin: -1px auto;
+        }
+        
+        #food td {
+            min-width: 100px;
+        }
+    }
+    
+    #gallery {
+        margin: 5rem -15px 5rem;
+        padding: 3rem 0;
+    }
+    
+    #gallery .filter {
+        padding: 5px;
+    }
+    
+    #gallery img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    #info {
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+    }
+    
+    #info div, #other-art div {
+        margin: 0 auto;
+    }
+    
+    #other-art {
+        margin: 0 auto;
+        padding: 3rem 0 5rem;
+        background-color: #0f814a;
+    }
+    
+    #other-art h2 {
+        color: white;
+    }
+    
+    #other-art hr {
+        border-color: white;
+    }
+    
+    #other-art .col-4 {
+        padding: 0.25rem;
+    }
+    
+    #other-art img {
+        width: 100%;
+        height: auto;
+    }
+        
+    /*food*/
+
+    /*lightbox*/
+    .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        padding: 1em;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+
+    .lightbox:target {
+        display: block;
+    }
+
+    .lightbox img {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 90%;
+        max-width: 720px;
+        height: auto;
+    }
+    /*lightbox*/
+
+
+    /* 景点按钮 */
+        #ref1 .btn {
+            color: #0f814a;
+    }
+        
+        /* 美食按钮 */
+        #ref2 .btn {
+            color: #0f814a;
+    } 
