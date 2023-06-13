@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>東部旅遊攻略</title>
+    <title>參考資料</title>
     <link rel="shortcut icon" type="image/jpg" href="img/TWlogo.png"/>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
@@ -62,30 +62,58 @@
         </nav>
     </header>
 
-    <main role="main" id="index">
+    <main role="main">
         <div class="container-fluid">
-            <div class="row">
-                <div class="caption">
-                    <h1>花<span class="handwriting">蓮</span>是多麼的，富人情味</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="caption">
-                    <h1>台灣最神秘的<span class="handwriting">東</span><span class="handwriting">部</span></h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="caption">
-                    <h1>臺<span class="handwriting">東</span>是多麼的，鬼斧神工</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="caption">
-                    <h1><span class="handwriting">宜</span>蘭是多麼的，清晰自然</h1>
+            <div class="row" id="references">
+                <div class="col-xl-6 col-md-8 col-12">
+                    <h2>資料來源</h2>
+                    <hr class = "hr-2">
+                    <p>以下為我們的資料來源</p>
+                    
+                    <div class="accordion" id="ref">
+
+                        <div class="card">
+                            <div class="card-header" id="ref1">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">景點</button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="ref1" data-parent="#ref">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="https://www.welcometw.com/%E5%AE%9C%E8%98%AD%E6%99%AF%E9%BB%9E%E6%8E%A8%E8%96%A6/" title="在新分頁中開啟" target="_blank">宜蘭景點推薦</a></li>
+                                        <li><a href="https://bobby.tw/blog/post/229464179" title="在新分頁中開啟" target="_blank">花蓮景點推薦</a></li>
+                                        <li><a href="https://fullfenblog.tw/mountain-space/" title="在新分頁中開啟" target="_blank">花蓮景點 - Fullfen's Blog</a></li>
+                                        <li><a href="https://www.welcometw.com/%E5%8F%B0%E6%9D%B1%E6%99%AF%E9%BB%9E%E6%8E%A8%E8%96%A6/" title="在新分頁中開啟" target="_blank">台東景點推薦</a></li>
+                                        <li><a href="https://tour.taitung.gov.tw/zh-tw/attraction/details/430" title="在新分頁中開啟" target="_blank">台東景點</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header" id="ref2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">美食</button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="ref2" data-parent="#ref">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="https://www.funtime.com.tw/blog/funtime/" title="在新分頁中開啟" target="_blank">宜蘭美食 - FUNTIME玩樂誌</a></li>
+                                        <li><a href="https://tisshuang.tw/blog/post/hualienfoods" title="在新分頁中開啟" target="_blank">花蓮美食 - Tis's Blog</a></li>
+                                            <li><a href="https://tisshuang.tw/blog/post/hualienfoods" title="在新分頁中開啟" target="_blank">花蓮美食 - Tis's Blog</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                    </div>
                 </div>
             </div>
         </div>
-        
     </main>
     
     
@@ -127,6 +155,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="../website/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../website/js/popper.min.js"></script> 
+    <script src="../website/js/bootstrap-4.3.1.js"></script>
+    
 </body>
 </html>
 
